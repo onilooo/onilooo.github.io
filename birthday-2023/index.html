@@ -1,5 +1,114 @@
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWqpvje" data-user="onilohehe" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span><a href="https://codepen.io/onilohehe/pen/MWqpvje"></a> by onilohehe (<a href="https://codepen.io/onilohehe">@onilohehe</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
+<div class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWqpvje" data-user="onilohehe"  data-prefill='{"title":"Hacked Text Effect","tags":[],"head":"<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;family=Rubik:wght@400;500&amp;display=swap\" rel=\"stylesheet\">","scripts":["https://codepen.io/Hyperplexed/pen/xxYJYjM/54407644e24173ad6019b766443bf2a6.js"],"stylesheets":[]}'>
+  <pre data-lang="html">&lt;html>
+&lt;head>
+   &lt;/head>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">&lt;/script>
+  &lt;script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#btn1").fadeOut(25);
+    $("#h1-1").fadeOut(25);
+  });
+});
+&lt;/script>
+&lt;div id="blob">&lt;/div>
+&lt;div id="blur">&lt;/div>
+&lt;h1-1>ŤUKNI NA VITAJ! →&lt;/h1-1>
+&lt;form action="https://github.com/onilooo/" class="inline">
+&lt;button class="float-left submit-button" id="btn1" data-value="UŽI SI">VITAJ!&lt;/button>&lt;br>&lt;br>
+</pre>
+  <pre data-lang="css">body {
+  background-color: black;
+  height: 100vh;
+  margin: 0rem;
+  overflow: hidden; 
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  
+  50% {
+    scale: 1 1.5;
+  }
+  
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blob {
+  background-color: white;
+  height: 34vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(12vmax);
+}
+
+button {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(3rem, 10vw, 10rem);
+  color: white;
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+  margin: 0rem;
+  position: absolute;
+  background-color: transparent;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  cursor: pointer;
+  z-index: 3;
+  border: none;
+  overflow: hidden;
+}
+button:focus {
+    border: none;
+}
+
+h1-1 {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(1rem, 1.5vw, 5rem);
+  color: white;
+  padding: 0rem clamp(1rem, 1vw, 1rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+  margin: -5rem;
+  position: absolute;
+  left: 21%;
+  top: 75%;
+  translate: -50% -50%;
+  z-index: 3;
+  text-align: left;
+}
+</pre>
+  <pre data-lang="js">
+const blob = document.getElementById("blob");
+
+window.onpointermove = event => { 
+  const { clientX, clientY } = event;
+  
+  blob.animate({
+    left: `${clientX}px`,
+    top: `${clientY}px`
+  }, { duration: 3000, fill: "forwards" });
+}
+
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+let interval = null;</pre></div>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
