@@ -1,11 +1,11 @@
+body {
+  background-color: black;
+}
+
 p {
    color: white;
    font-family: 'Source Code Pro', monospace;
-   place-items: center;
-  }
-
-body {
-  background-color: black;
+   position: absolute;
 }
 
 body.menu-toggled > .meta-link > span {
