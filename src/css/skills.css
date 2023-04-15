@@ -131,13 +131,13 @@
   padding-left: 7px;
   padding-right: 7px;
   border-radius: 5px;
-  color: white;
+  color: black;
 }
 .progressBar {
   margin-bottom: 26px;
   margin-bottom: 1.66em;
 }
-.progressBar h4 {
+.progressBar p {
   font-size: 16px;
   text-transform: none;
   margin-bottom: 7px;
