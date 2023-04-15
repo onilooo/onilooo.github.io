@@ -6,6 +6,8 @@ body {
 p {
    font-family: 'Source Code Pro', monospace;
    color: white;
+  text-align: center;
+  line-height: 100px;
 }
 
 body.menu-toggled > .meta-link > span {
