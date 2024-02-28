@@ -10,6 +10,12 @@ p {
   line-height: 100px;
 }
 
+a:link {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 body.menu-toggled > .meta-link > span {
   color: rgb(30, 30, 30);
 }
